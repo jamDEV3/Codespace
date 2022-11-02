@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+// Accepts number from user to calculate the factorial of that number
+
+let n = parseInt(prompt("Enter a number to find the factorial:"));
+
+// Declares function that calculates the factorial of the user's number
+
+function facto(n) {
+
+    if (n===0) {
+        return 1;
+    }
+
+    else {
+        return n*facto(n-1);
+    }
+
+}
+
+// Declares variable in relation to calling function with the user's number as an argument
+
+let y = facto(n);
+
+
+// Creates equation with arguments
+z = n + "! = " + y;
+    
+// Displays equation
+alert(z);
+
+</script>
+
+</body>
+</html>

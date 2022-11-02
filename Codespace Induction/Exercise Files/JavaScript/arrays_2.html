@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+//  Script that collects numbers in an array and calculates the average of the arry
+
+// Declares array, length of array for range, and sum of array
+const numbers = [20, 30 ,25, 35, -16, 60, -100];
+let numLen = numbers.length;
+let sum = 0;
+
+// Loops for all numbers in array
+for (let i = 0; i < numLen; i++) {
+
+    // Increments sum each loop
+    sum += numbers[i]; 
+}
+
+// Calculates average using the sum and length of array
+avg = sum/numLen;
+
+// Prints average of array
+console.log(avg);
+</script>
+
+</body>
+</html>

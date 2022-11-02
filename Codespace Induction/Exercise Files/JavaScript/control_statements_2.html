@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+// Lets user input multiple numbers
+let x = prompt("Enter a number");
+let y = prompt("Enter a number");
+let z = prompt("Enter a number");
+
+
+// Check if numbers are in increasing order
+if (x < y && x < z) {
+    alert("These numbers are in increasing order");
+}
+
+// Checks if numbers are in decreasing order
+else if (x > y && x > z) {
+    alert("These numbers are in decreasing order");
+}
+
+// If neither previous conditions are satisfied, function determines there is no order
+else {
+    alert("These numbers are in no order")
+}
+
+</script>
+
+</body>
+</html>

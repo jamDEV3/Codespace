@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+// Displays array and the array's max value through the use of functions
+
+const numbers= [10,2,3,4,7];
+
+
+// Declares function to display contents of array
+function displayList() {
+
+    alert(numbers);
+}
+
+// Declares function to find max value in array
+function maxList() {
+
+// Declares arguments for range in array to compare all values with each other to find highest value
+let numLen = numbers.length;
+
+//Declares variable at start of array
+let max = numbers[0];
+
+// Variable increments through for loop
+for (let i = 1; i < numLen; i++) {
+
+
+// Checks the current variable with the previous variable, storing the higher value
+if (numbers[i] > max) {
+    max = numbers[i];
+}
+
+
+}
+
+// Once loop finishes, display the output value
+alert(max);
+
+}
+
+// Calls and executes functions
+displayList();
+maxList();
+
+</script>
+
+</body>
+</html>

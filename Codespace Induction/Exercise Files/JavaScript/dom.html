@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Activity 1 - Vanilla JS DOM</title>
+    </head> 
+
+<!-- Changes style of paragraph element with id = "text" after button click -->
+    <body>
+        <!-- Declares id on paragraph element -->
+        <p id="text">Vanilla JS DOM</p> 
+        <div>
+        <!-- Button element contains function that changes button style -->
+        <button id="jsstyle" onclick="js_style()">Style</button>
+        </div>
+
+        <!-- Script for styling function -->
+        <script>
+            function js_style() {
+                // Declares variable x to detect Element id "text" and select all of that paragraph elements within it
+                let x = document.getElementById("text").querySelectorAll("p");
+
+                // For loop to select all characters within the text
+                for (let i = 0; i < x.length; i++) {
+                    // Style added to element
+                    x[i].style.backgroundColor = "green";
+                    x[i].style.color = "white";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+//  Script that collects numbers in an array and calculates the average of the arry
+
+// Declares array, length of array for range
+const numbers = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49];
+let numLen = numbers.length;
+
+//Declares first array item as the minimum
+let max = numbers[0];
+
+// Checks list for max number and appending the max value for the highest number
+for (let i = 1; i < numLen; i++) {
+
+    if (numbers[i] > max) {
+        max = numbers[i];
+    }
+
+}
+
+// Prints max of array
+console.log(max);
+
+//Declares first array item as the minimum
+let min = numbers[0];
+
+// Checks list for min number and appending the min value for the lowest number
+for (let i = 1; i < numLen; i++) {
+
+if (numbers[i] < min) {
+    min = numbers[i];
+}
+
+}
+
+// Prints min of array
+console.log(min);
+
+</script>
+
+</body>
+</html>
