@@ -57,18 +57,18 @@
         <div>
         <!-- Buttons -->
         <!-- Button elements are clicked, calling the rpsGen function -->
-        <button id="rock"></button>
-        <button id="paper"></button>
-        <button id="scissors"></button>
+        <button id="rock" value="Rock"></button>
+        <button id="paper" value="Paper"></button>
+        <button id="scissors" value="Scissors"></button>
 
         <!-- Inline elements displaying choices, result and scores -->
         <div style="text-align:left">
-            <p>Your choice: <span id="player-choice"></span></p>
-            <p>Computer's choice: <span id="computer-choice"></span></p>
+            <p data-cy = "yourChoice">Your choice: <span id="player-choice"></span></p>
+            <p data-cy = "comChoice">Computer's choice: <span id="computer-choice"></span></p>
         </div>
             <h2>Result: <span id="result"></span></h2>
-            <p>Player Score: <span id="player-score"></span></p>
-            <p>Computer Score: <span id="computer-score"></span></p>
+            <p data-cy = "yourScore">Your Score: <span id="player-score"></span></p>
+            <p data-cy = "comScore">Computer Score: <span id="computer-score"></span></p>
         </div>
     </div>
 
